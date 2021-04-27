@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "github.com/tengla/grpc-ping/protos/ping";
+
+service PingService {
+  rpc Ping(Empty) returns (stream PingResponse);
+}
+
+message Empty {}
+
+message PingResponse {
+  string payload = 1;
+}
