@@ -1,1 +1,1 @@
-# Ping server
+# Ping pong grpc streaming server example
