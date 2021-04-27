@@ -6,8 +6,8 @@ all:
 protoc:
 	protoc \
 	-I=protos \
-	--go_out=protos \
+	--go_out=protos/ping \
 	--go_opt=paths=source_relative \
-	--go-grpc_out=protos \
+	--go-grpc_out=protos/ping \
 	--go-grpc_opt=paths=source_relative \
   protos/ping.proto
